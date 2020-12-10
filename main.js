@@ -150,7 +150,7 @@ class ServiceNowAdapter extends EventEmitter {
      * @description Emits an OFFLINE event to IAP indicating the external
      *   system is not available.
      */
-    emitOffline(id) {
+    emitOffline() {
         this.emitStatus('OFFLINE');
         log.warn('ServiceNow: Instance is unavailable.');
     }
